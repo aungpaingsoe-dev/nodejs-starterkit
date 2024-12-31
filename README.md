@@ -1,6 +1,9 @@
 
 # NodeJs Starter Kit (Rest Api)
 
+## Abmout 
+
+A simple Node.js starter project with essential setup, RESTful API, and authentication. Ideal for quickly launching new backend projects.
 
 ## Postman Collection
 
