@@ -4,11 +4,11 @@
 
 ## Postman Collection
 
-![App Screenshot](https://raw.githubusercontent.com/aungpaingsoe097238/nodejs-starterkit-restapi/main/docs/postman.png)
+![App Screenshot](https://github.com/aungpaingsoe-dev/nodejs-starterkit-restapi/blob/main/docs/postman.png?raw=true)
 
 ## Api Documentation
 
-![App Screenshot](https://raw.githubusercontent.com/aungpaingsoe097238/nodejs-starterkit-restapi/main/docs/apidocs.png)
+![App Screenshot](https://github.com/aungpaingsoe-dev/nodejs-starterkit-restapi/blob/main/docs/apidocs.png?raw=true)
 
 ## API Documentation
 
