@@ -15,7 +15,6 @@ const upload = multer({ storage: multer.memoryStorage() });
 const server = createServer(app);
 
 // Middlewares
-// Use the logger middleware
 app.use(loggerMiddleware);
 app.use(express.json());
 app.use("/public/uploads", express.static("public/uploads"));
@@ -28,6 +27,10 @@ app.use("/api", upload.any(), routes);
 app.get("/", (req, res) => {
   res.sendFile(join(__dirname, "../public/index.html"));
 });
+
+app.get("/apidocs", (req, res) => {
+  res.sendFile(join(__dirname, "../public/apidocs.html"));
+})
 
 // 404 Handler for unmatched routes
 app.use((req, res, next) => {

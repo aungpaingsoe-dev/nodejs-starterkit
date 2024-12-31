@@ -30,10 +30,12 @@
 							]
 						},
 						"url": {
-							"raw": "{{base_url}}/api/auth/sign-in",
+							"raw": "http://localhost:3030/api/auth/sign-in",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"auth",
@@ -219,10 +221,12 @@
 							]
 						},
 						"url": {
-							"raw": "{{base_url}}/api/auth/sign-up",
+							"raw": "http://localhost:3030/api/auth/sign-up",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"auth",
@@ -405,13 +409,25 @@
 				{
 					"name": "GET USERS",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY0ZjY5MTMxYzlkZmVlYWM2M2U4ZThkOGQ2YjA0Yzc1OTk4NjczNzg5OWUzNDU5MDYzMzc0NzhhMGJiODUyZDk4NjVkNjQwNDY2NzFhNjUzIn0.eyJhdWQiOiIzIiwianRpIjoiNjRmNjkxMzFjOWRmZWVhYzYzZThlOGQ4ZDZiMDRjNzU5OTg2NzM3ODk5ZTM0NTkwNjMzNzQ3OGEwYmI4NTJkOTg2NWQ2NDA0NjY3MWE2NTMiLCJpYXQiOjE3MzAyODIwMDUsIm5iZiI6MTczMDI4MjAwNSwiZXhwIjoxNzYxODE4MDA1LCJzdWIiOiIxNDc3Iiwic2NvcGVzIjpbXX0.KqG6Xj0bbxv62A6w1AiC2UqGK6MUNvUd17YkoZSHJ8WiBu766B0ABcB_Tb6AdSJqju2rZGxN_zyyYlUB2l19AC_SHrSjSSzfNlky7x2EGjtVXn14A7MBw151KDxPkBpswAIpYdD72GulQYG6fFhvVWkWavqqFEjvDt3UvueDHHK7xvNnftkado6DgVA1poyoPmeYuJXHVUIbaEoUeErgH79jgbKTCL7hSt5dZVpZ8ytYHbnmRXHFDNZv9_Tlts4n6hnr1ATAZvBa_kbCE7VXpXNueh2mQEzQ7LKrvFuNtZ_HTINoBmZge2pEUsdJZrOU8SNWfm50XveJoq3JuyAyqnV7IF_Q3cNP9PQ_m9AhBAfmbdZxbdBd-NSRvCpeYPkujIQPDxO9J61T4XLA_GxJu0mWqgFyd4AVADMsioNPdkgRwIRev98P9Ys7uSckLdgyoWbVUs_CXbFslLg20998YEUKJniKge6_A_KISULQ419nvBPOcppyV4WyN1zM5t0K4Pww4EtpClxm0-mhaglyESFMTELjgqn9bFG6jCvwllrJEIC8PYa4qA_QKmK5zOEPWdg4pY7xvuiZfndchRjPytYd_IqE1FM3TsefAvCrFqm2sFSxUcE9Aj3M7D6Nyzyx-5_LscZ2Ksw-aWz0QZqyQEYHNk9LC3LdH1ykWhhSFso",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/users",
+							"raw": "http://localhost:3030/api/users",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users"
@@ -480,13 +496,31 @@
 				{
 					"name": "GET USER",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY0ZjY5MTMxYzlkZmVlYWM2M2U4ZThkOGQ2YjA0Yzc1OTk4NjczNzg5OWUzNDU5MDYzMzc0NzhhMGJiODUyZDk4NjVkNjQwNDY2NzFhNjUzIn0.eyJhdWQiOiIzIiwianRpIjoiNjRmNjkxMzFjOWRmZWVhYzYzZThlOGQ4ZDZiMDRjNzU5OTg2NzM3ODk5ZTM0NTkwNjMzNzQ3OGEwYmI4NTJkOTg2NWQ2NDA0NjY3MWE2NTMiLCJpYXQiOjE3MzAyODIwMDUsIm5iZiI6MTczMDI4MjAwNSwiZXhwIjoxNzYxODE4MDA1LCJzdWIiOiIxNDc3Iiwic2NvcGVzIjpbXX0.KqG6Xj0bbxv62A6w1AiC2UqGK6MUNvUd17YkoZSHJ8WiBu766B0ABcB_Tb6AdSJqju2rZGxN_zyyYlUB2l19AC_SHrSjSSzfNlky7x2EGjtVXn14A7MBw151KDxPkBpswAIpYdD72GulQYG6fFhvVWkWavqqFEjvDt3UvueDHHK7xvNnftkado6DgVA1poyoPmeYuJXHVUIbaEoUeErgH79jgbKTCL7hSt5dZVpZ8ytYHbnmRXHFDNZv9_Tlts4n6hnr1ATAZvBa_kbCE7VXpXNueh2mQEzQ7LKrvFuNtZ_HTINoBmZge2pEUsdJZrOU8SNWfm50XveJoq3JuyAyqnV7IF_Q3cNP9PQ_m9AhBAfmbdZxbdBd-NSRvCpeYPkujIQPDxO9J61T4XLA_GxJu0mWqgFyd4AVADMsioNPdkgRwIRev98P9Ys7uSckLdgyoWbVUs_CXbFslLg20998YEUKJniKge6_A_KISULQ419nvBPOcppyV4WyN1zM5t0K4Pww4EtpClxm0-mhaglyESFMTELjgqn9bFG6jCvwllrJEIC8PYa4qA_QKmK5zOEPWdg4pY7xvuiZfndchRjPytYd_IqE1FM3TsefAvCrFqm2sFSxUcE9Aj3M7D6Nyzyx-5_LscZ2Ksw-aWz0QZqyQEYHNk9LC3LdH1ykWhhSFso",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "{{base_url}}/api/users/1",
+							"raw": "http://localhost:3030/api/users/1",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -557,6 +591,16 @@
 				{
 					"name": "CREATE USER",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY0ZjY5MTMxYzlkZmVlYWM2M2U4ZThkOGQ2YjA0Yzc1OTk4NjczNzg5OWUzNDU5MDYzMzc0NzhhMGJiODUyZDk4NjVkNjQwNDY2NzFhNjUzIn0.eyJhdWQiOiIzIiwianRpIjoiNjRmNjkxMzFjOWRmZWVhYzYzZThlOGQ4ZDZiMDRjNzU5OTg2NzM3ODk5ZTM0NTkwNjMzNzQ3OGEwYmI4NTJkOTg2NWQ2NDA0NjY3MWE2NTMiLCJpYXQiOjE3MzAyODIwMDUsIm5iZiI6MTczMDI4MjAwNSwiZXhwIjoxNzYxODE4MDA1LCJzdWIiOiIxNDc3Iiwic2NvcGVzIjpbXX0.KqG6Xj0bbxv62A6w1AiC2UqGK6MUNvUd17YkoZSHJ8WiBu766B0ABcB_Tb6AdSJqju2rZGxN_zyyYlUB2l19AC_SHrSjSSzfNlky7x2EGjtVXn14A7MBw151KDxPkBpswAIpYdD72GulQYG6fFhvVWkWavqqFEjvDt3UvueDHHK7xvNnftkado6DgVA1poyoPmeYuJXHVUIbaEoUeErgH79jgbKTCL7hSt5dZVpZ8ytYHbnmRXHFDNZv9_Tlts4n6hnr1ATAZvBa_kbCE7VXpXNueh2mQEzQ7LKrvFuNtZ_HTINoBmZge2pEUsdJZrOU8SNWfm50XveJoq3JuyAyqnV7IF_Q3cNP9PQ_m9AhBAfmbdZxbdBd-NSRvCpeYPkujIQPDxO9J61T4XLA_GxJu0mWqgFyd4AVADMsioNPdkgRwIRev98P9Ys7uSckLdgyoWbVUs_CXbFslLg20998YEUKJniKge6_A_KISULQ419nvBPOcppyV4WyN1zM5t0K4Pww4EtpClxm0-mhaglyESFMTELjgqn9bFG6jCvwllrJEIC8PYa4qA_QKmK5zOEPWdg4pY7xvuiZfndchRjPytYd_IqE1FM3TsefAvCrFqm2sFSxUcE9Aj3M7D6Nyzyx-5_LscZ2Ksw-aWz0QZqyQEYHNk9LC3LdH1ykWhhSFso",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -569,10 +613,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/users",
+							"raw": "http://localhost:3030/api/users",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users"
@@ -650,13 +696,25 @@
 				{
 					"name": "DELETE USER",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY0ZjY5MTMxYzlkZmVlYWM2M2U4ZThkOGQ2YjA0Yzc1OTk4NjczNzg5OWUzNDU5MDYzMzc0NzhhMGJiODUyZDk4NjVkNjQwNDY2NzFhNjUzIn0.eyJhdWQiOiIzIiwianRpIjoiNjRmNjkxMzFjOWRmZWVhYzYzZThlOGQ4ZDZiMDRjNzU5OTg2NzM3ODk5ZTM0NTkwNjMzNzQ3OGEwYmI4NTJkOTg2NWQ2NDA0NjY3MWE2NTMiLCJpYXQiOjE3MzAyODIwMDUsIm5iZiI6MTczMDI4MjAwNSwiZXhwIjoxNzYxODE4MDA1LCJzdWIiOiIxNDc3Iiwic2NvcGVzIjpbXX0.KqG6Xj0bbxv62A6w1AiC2UqGK6MUNvUd17YkoZSHJ8WiBu766B0ABcB_Tb6AdSJqju2rZGxN_zyyYlUB2l19AC_SHrSjSSzfNlky7x2EGjtVXn14A7MBw151KDxPkBpswAIpYdD72GulQYG6fFhvVWkWavqqFEjvDt3UvueDHHK7xvNnftkado6DgVA1poyoPmeYuJXHVUIbaEoUeErgH79jgbKTCL7hSt5dZVpZ8ytYHbnmRXHFDNZv9_Tlts4n6hnr1ATAZvBa_kbCE7VXpXNueh2mQEzQ7LKrvFuNtZ_HTINoBmZge2pEUsdJZrOU8SNWfm50XveJoq3JuyAyqnV7IF_Q3cNP9PQ_m9AhBAfmbdZxbdBd-NSRvCpeYPkujIQPDxO9J61T4XLA_GxJu0mWqgFyd4AVADMsioNPdkgRwIRev98P9Ys7uSckLdgyoWbVUs_CXbFslLg20998YEUKJniKge6_A_KISULQ419nvBPOcppyV4WyN1zM5t0K4Pww4EtpClxm0-mhaglyESFMTELjgqn9bFG6jCvwllrJEIC8PYa4qA_QKmK5zOEPWdg4pY7xvuiZfndchRjPytYd_IqE1FM3TsefAvCrFqm2sFSxUcE9Aj3M7D6Nyzyx-5_LscZ2Ksw-aWz0QZqyQEYHNk9LC3LdH1ykWhhSFso",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/api/users/1",
+							"raw": "http://localhost:3030/api/users/1",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -732,6 +790,16 @@
 				{
 					"name": "UPLOAD",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY0ZjY5MTMxYzlkZmVlYWM2M2U4ZThkOGQ2YjA0Yzc1OTk4NjczNzg5OWUzNDU5MDYzMzc0NzhhMGJiODUyZDk4NjVkNjQwNDY2NzFhNjUzIn0.eyJhdWQiOiIzIiwianRpIjoiNjRmNjkxMzFjOWRmZWVhYzYzZThlOGQ4ZDZiMDRjNzU5OTg2NzM3ODk5ZTM0NTkwNjMzNzQ3OGEwYmI4NTJkOTg2NWQ2NDA0NjY3MWE2NTMiLCJpYXQiOjE3MzAyODIwMDUsIm5iZiI6MTczMDI4MjAwNSwiZXhwIjoxNzYxODE4MDA1LCJzdWIiOiIxNDc3Iiwic2NvcGVzIjpbXX0.KqG6Xj0bbxv62A6w1AiC2UqGK6MUNvUd17YkoZSHJ8WiBu766B0ABcB_Tb6AdSJqju2rZGxN_zyyYlUB2l19AC_SHrSjSSzfNlky7x2EGjtVXn14A7MBw151KDxPkBpswAIpYdD72GulQYG6fFhvVWkWavqqFEjvDt3UvueDHHK7xvNnftkado6DgVA1poyoPmeYuJXHVUIbaEoUeErgH79jgbKTCL7hSt5dZVpZ8ytYHbnmRXHFDNZv9_Tlts4n6hnr1ATAZvBa_kbCE7VXpXNueh2mQEzQ7LKrvFuNtZ_HTINoBmZge2pEUsdJZrOU8SNWfm50XveJoq3JuyAyqnV7IF_Q3cNP9PQ_m9AhBAfmbdZxbdBd-NSRvCpeYPkujIQPDxO9J61T4XLA_GxJu0mWqgFyd4AVADMsioNPdkgRwIRev98P9Ys7uSckLdgyoWbVUs_CXbFslLg20998YEUKJniKge6_A_KISULQ419nvBPOcppyV4WyN1zM5t0K4Pww4EtpClxm0-mhaglyESFMTELjgqn9bFG6jCvwllrJEIC8PYa4qA_QKmK5zOEPWdg4pY7xvuiZfndchRjPytYd_IqE1FM3TsefAvCrFqm2sFSxUcE9Aj3M7D6Nyzyx-5_LscZ2Ksw-aWz0QZqyQEYHNk9LC3LdH1ykWhhSFso",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -745,10 +813,12 @@
 							]
 						},
 						"url": {
-							"raw": "{{base_url}}/api/media/upload",
+							"raw": "http://localhost:3030/api/media/upload",
+							"protocol": "http",
 							"host": [
-								"{{base_url}}"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"media",
