@@ -25,7 +25,7 @@ A simple Node.js starter project with essential setup, RESTful API, and authenti
 - Global Error Handling
 - File Uploading
 - Mail Sending
-- Postmain Collection 
+- Postman Collection 
 
 ## Tech Stack
 
@@ -44,6 +44,10 @@ Running with development server
 ```bash
   npm run start:dev
 ```
+
+After running development server, you can run api documentation link
+
+http://localhost:3030/apidocs
 
 Running migration 
 
