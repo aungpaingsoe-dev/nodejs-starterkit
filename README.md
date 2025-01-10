@@ -28,6 +28,7 @@ A modern and scalable Node.js starter kit built with TypeScript, Prisma, and Zod
 
 ## Folder Structure
 
+```plaintext
 src/
 ├── app/                  # Core application logic
 │   ├── controllers/      # API controllers
@@ -45,7 +46,7 @@ src/
 ├── index.ts              # Entry point for application initialization
 ├── server.ts             # Main server configuration and startup
 └── .env.example          # Example environment variables file
-```plaintext
+```
 
 ## Tech Stack
 
