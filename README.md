@@ -1,9 +1,11 @@
 
 # NodeJs Starter Kit (Rest Api)
 
-## Abmout 
+## About
 
-A simple Node.js starter project with essential setup, RESTful API, and authentication. Ideal for quickly launching new backend projects.
+NodeJs application တစ်ခုရဲ့ structure ကိုသေချာတည်ဆောက်ထားသော Starterkit တစ်ခုဖြစ်ပါတယ်။ စတင်လေ့လာသူများနှင့် api backend project တစ်ခုကိုအသင့်အနေအထားကနေစပြီးအသုံးပြုနိုင်ရန်ရည်ရွယ်ပါတယ်။
+
+A modern and scalable Node.js starter kit built with TypeScript, Prisma, and Zod. This starter kit includes essential features for rapid development, such as API documentation, validation, error handling, and database integration.
 
 ## Postman Collection
 
@@ -90,5 +92,3 @@ Building production
 ```bash
   npm run build
 ```
-
-
