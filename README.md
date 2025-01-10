@@ -29,7 +29,7 @@ A simple Node.js starter project with essential setup, RESTful API, and authenti
 
 ## Tech Stack
 
-**Client:** TypeScript, NodeJs, ExpressJs, Zod, Prisma 
+TypeScript, NodeJs, ExpressJs, Zod, Prisma 
 
 ## Deployment
 
